@@ -342,19 +342,19 @@ class Lua {
 }
 
 class LuaL {
-	inline public static function newstate():LuaState {
+	inline public static function newState():LuaState {
 		return _LuaJIT.lual_newstate();
 	}
 
-	inline public static function openlibs(state:LuaState):Void {
+	inline public static function openLibs(state:LuaState):Void {
 		_LuaJIT.lual_openlibs(state);
 	}
 
-	inline public static function loadstring(state:LuaState, str:String):Void {
+	inline public static function loadString(state:LuaState, str:String):Void {
 		_LuaJIT.lual_loadstring(state, str);
 	}
 
-	inline public static function dostring(state:LuaState, str:String):Void {
+	inline public static function doString(state:LuaState, str:String):Void {
 		_LuaJIT.lual_dostring(state, str);
 	}
 }

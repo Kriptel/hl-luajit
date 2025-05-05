@@ -22,14 +22,14 @@ import luajit.LuaJIT;
 function main() {
 	LuaJIT.init();
 
-	var state = LuaL.newstate();
-	LuaL.openlibs(state);
+	var state = LuaL.newState();
+	LuaL.openLibs(state);
 
 	LuaJIT.addCallback(state, 'haxeFunction', function(a:Int, b:String, c:Bool) {
 		trace(a, b, c);
 	});
 
-	LuaL.dostring(state, '
+	LuaL.doString(state, '
 	local a = 0
 	print(a)
 
@@ -46,5 +46,4 @@ function main() {
 
 	trace(Lua.dynCall(state, [12, 35, 'hello world'], 1)); // 123
 }
-
 ```
