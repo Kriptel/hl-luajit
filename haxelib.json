@@ -1,0 +1,11 @@
+{
+  "name": "hl-luajit",
+  "url" : "https://github.com/Kriptel/hl-luajit",
+  "license": "MIT",
+  "description": "",
+  "version": "0.0.1",
+  "releasenote": "",
+  "dependencies": {},
+  "classPath": "source/",
+  "contributors": ["Kriptel"]
+}

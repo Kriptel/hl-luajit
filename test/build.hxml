@@ -1,0 +1,11 @@
+-main Main
+
+-lib hl-luajit
+-cp source
+
+--macro keep("Main")
+
+-hl export/main.hl
+
+-cmd cd export
+-cmd hl main.hl
